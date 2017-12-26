@@ -1,16 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
-
-const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
-  suppressScrollX: true
-};
-
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-
+import { ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -18,14 +11,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    PerfectScrollbarModule
+    RouterModule.forRoot(ROUTES, { enableTracing: false})
   ],
-  providers: [
-    {
-      provide: PERFECT_SCROLLBAR_CONFIG,
-      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
