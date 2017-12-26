@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~simple-css-reset/reset.css';
+
+html, body {
+  padding: 0;
+  margin: 0;  // this is important for perfect-scrollbars to work
+  overflow-y: hidden;   // this is important for perfect-scrollbars to work
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
