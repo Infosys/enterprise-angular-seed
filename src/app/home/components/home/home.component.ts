@@ -1,5 +1,8 @@
+import { Subscription } from 'rxjs/Subscription';
+import { Post } from './../../models/post';
 import { Component, OnInit } from '@angular/core';
 import * as log from 'loglevel';
+import { JsonServerService } from '../../services/json-server.service';
 
 
 @Component({
@@ -8,12 +11,15 @@ import * as log from 'loglevel';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  private posts$: Subscription;
+  constructor(private service: JsonServerService) { }
 
   ngOnInit() {
     log.debug('debug');
     log.warn('warning!');
+    this.posts$ = this.service.getBEData().subscribe( posts => {
+      log.debug(posts);
+    });
   }
 
 }

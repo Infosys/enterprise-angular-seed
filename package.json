@@ -3,12 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"npm run json:server\" \"ng serve --proxy-config proxy.json\" ",
     "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "json:server": "json-server db.json"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +24,7 @@
     "ngx-perfect-scrollbar": "^5.3.1",
     "rxjs": "^5.5.2",
     "simple-css-reset": "^2.0.6",
+    "tixif-ngx-busy": "^0.0.8",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
@@ -36,8 +35,10 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "concurrently": "^3.5.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
+    "json-server": "^0.12.1",
     "karma": "~1.7.0",
     "karma-chrome-launcher": "~2.1.1",
     "karma-cli": "~1.0.1",

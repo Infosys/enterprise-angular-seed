@@ -1,5 +1,8 @@
 <perfect-scrollbar>
-  <div style="height: 2000px;">
+  <div [ngBusy]="posts$" style="height: 400px; width:400px; border:1px solid blue; background-color:brown;">
+    This section should be busy!
+  </div>
+  <div style="height: 2000px; width:400px;">
       long content
-    </div>
+  </div>
 </perfect-scrollbar>
