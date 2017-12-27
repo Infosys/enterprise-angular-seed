@@ -21,5 +21,4 @@ export class HomeComponent implements OnInit {
       log.debug(posts);
     });
   }
-
 }

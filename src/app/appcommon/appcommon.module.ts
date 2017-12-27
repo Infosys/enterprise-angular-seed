@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BusyModule, BusyConfig, BUSY_CONFIG_DEFAULTS } from 'tixif-ngx-busy';
-
-export const busyConfig = BUSY_CONFIG_DEFAULTS;
+import { BusyModule } from 'tixif-ngx-busy';
+import { NgxPermissionsModule } from 'ngx-permissions';
 
 @NgModule({
   imports: [
     CommonModule,
-    BusyModule.forRoot(busyConfig)
   ],
   declarations: [],
-  exports: [ BusyModule ]
+  exports: [ BusyModule, NgxPermissionsModule ]
 })
 export class AppcommonModule { }

@@ -15,5 +15,15 @@
   ],
   "profile": {
     "name": "typicode"
+  },
+  "userInfo": {
+    "roles":{
+      "ADMIN":["listExperts", "viewExpert", "editExpert", "deleteExpert", "loadExperts"]
+    }
+  },
+  "roles":{
+    "GUEST":["listExperts", "viewExpert"],
+    "MANAGER":["listExperts", "viewExpert", "editExpert"],
+    "ADMIN":["listExperts", "viewExpert", "editExpert", "deleteExpert", "loadExperts"]
   }
 }

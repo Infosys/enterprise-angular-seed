@@ -11,7 +11,8 @@ ng g module appcommon --module app
 
 ng g i home/models/Post
 ng g s home/services/JsonServer --spec false
-
+ng g i appcommon/models/User
+ng g i appcommon/models/Roles
 ````
 
 ### prod build with stats.json generated.

@@ -10,6 +10,6 @@ export class JsonServerService {
   constructor(private http: HttpClient) { }
 
   public getBEData(): Observable<Post[]> {
-    return this.http.get<Post[]>('/api/posts').delay(45000);
+    return this.http.get<Post[]>('/api/posts').delay(5000);
   }
 }

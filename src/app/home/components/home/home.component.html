@@ -1,8 +1,20 @@
 <perfect-scrollbar>
-  <div [ngBusy]="posts$" style="height: 400px; width:400px; border:1px solid blue; background-color:brown;">
+  <div [ngBusy]="posts$" style="height: 100px; width:400px; border:1px solid blue;">
     This section should be busy!
   </div>
   <div style="height: 2000px; width:400px;">
-      long content
+    <div *ngxPermissionsOnly="['listExperts']">
+      <div>Viewable List of Experts here.. accessible to permission "listExperts"</div>
+  </div>
+  
+  <div *ngxPermissionsOnly="['deleteExpert']">
+    <div>Delete Expert button accessible only via permission "deleteExpert"</div>
+  </div>
+   
+   <div *ngxPermissionsExcept="'editExpert'">
+     <div> Only Guest can see this!! 
+       You seem to be New here.. Please Sign up to edit the expert!!
+     </div>
+   </div>
   </div>
 </perfect-scrollbar>
