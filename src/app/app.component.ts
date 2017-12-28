@@ -4,14 +4,16 @@ import { environment } from './../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import * as log from 'loglevel';
 import { User } from './appcommon/models/user';
+import { routerTransition } from './components/animations/router.animations';
+
 
 @Component({
   selector: 'app-root',
+  animations: [ routerTransition ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
   constructor(private rolesService: NgxRolesService, private permsService: NgxPermissionsService,
     private http: HttpClient) {}
 
@@ -30,5 +32,8 @@ export class AppComponent implements OnInit {
         }
       }
     });
+  }
+  getState(outlet) {
+    return outlet.activatedRouteData.state;
   }
 }

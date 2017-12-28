@@ -11,7 +11,7 @@ import { JsonServerService } from '../../services/json-server.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  private posts$: Subscription;
+  public posts$: Subscription;
   constructor(private service: JsonServerService) { }
 
   ngOnInit() {

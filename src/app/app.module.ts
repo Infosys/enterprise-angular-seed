@@ -5,15 +5,30 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { BusyModule, BUSY_CONFIG_DEFAULTS } from 'tixif-ngx-busy';
+import { NgxPermissionsModule } from 'ngx-permissions';
+import { MenubarModule, MenuItem } from 'primeng/primeng';
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 
 import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
-import { AppcommonModule } from './appcommon/appcommon.module';
-import { NgxPermissionsModule } from 'ngx-permissions';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true
+};
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -21,9 +36,16 @@ import { NgxPermissionsModule } from 'ngx-permissions';
     RouterModule.forRoot(ROUTES, { enableTracing: false}),
     BusyModule.forRoot(BUSY_CONFIG_DEFAULTS),
     NgxPermissionsModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    MenubarModule,
+    PerfectScrollbarModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: PERFECT_SCROLLBAR_CONFIG,
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

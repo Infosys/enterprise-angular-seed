@@ -1,1 +1,7 @@
-<router-outlet></router-outlet>
+<app-header></app-header>
+<perfect-scrollbar>
+  <div [@routerTransition]="getState(o)">
+      <router-outlet #o="outlet"></router-outlet>
+  </div>
+</perfect-scrollbar>
+<app-footer></app-footer>

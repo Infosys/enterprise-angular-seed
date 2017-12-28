@@ -13,6 +13,12 @@ ng g i home/models/Post
 ng g s home/services/JsonServer --spec false
 ng g i appcommon/models/User
 ng g i appcommon/models/Roles
+
+ng g c home/components/header --spec false --m home
+ng g c home/components/footer --spec false --m home
+
+ng g module --routing Demo -m App
+ng g c demo/components/DemoLanding --spec false --m demo
 ````
 
 ### prod build with stats.json generated.

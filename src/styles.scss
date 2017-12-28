@@ -12,3 +12,8 @@ body {
 }
 
 @import '~tixif-ngx-busy/build/style/busy.css';
+
+// Needed to ensure smaller mennubar when I am not using font-awesome
+.ui-menu.ui-menubar .ui-menubar-root-list>li>a>.ui-submenu-icon {
+  float: left;
+}

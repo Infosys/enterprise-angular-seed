@@ -15,15 +15,16 @@ if you use npm to install packages - it will fail with error saying `yarn-or-die
 
 ## Features of this seed
 
-* Uses angular-cli to scaffold the project
+* [x] Uses angular-cli to scaffold the project
+* [x] Uses slim scrollbars for the content page
+* [x] Entire application is lazy loaded only - even the home page
+* [x] Uses yarn for any new package install and controls yarn-lock file..
+* [x] conditional console.log output controlled via environment.ts?
 * Adds demo pages to use salient application upgrades
-    * [x] slim scrollbars
-    * [x] Entire application is lazy loaded only - even the home page
-    * [x] uses yarn for any new package install and controlls yarn-lock file..
-    * [ ] Authorization directive
+    * [x] Uses primeNG for some basic widgets
+    * [x] Authorization directive
     * [ ] Progress / Busy Indicator Directive
-    * [x] conditional console.log output controlled via webpack?
-
+    * [x] Uses Animations
 ## Notes
 
 * IE 11 support is disabled by default. If you need to support IE11 - please uncheck appropriate blocks in polyfills.ts. This increases size of polyfills bundle file.
@@ -35,4 +36,11 @@ if you use npm to install packages - it will fail with error saying `yarn-or-die
 * Slim scrollbars using perfect-scrollbars. See configuration in home.module. Still need to experiment with configuration and individual component level setup.
 * configurable logging using loglevel. see configuration in app.component.ts. You can override the same in each component if you so desire. In Production the log level are automatically set to 'warn' via environment variable.
 * Loader / spinner directive.. There are couple of options.. e.g. [ngx-loading](https://github.com/Zak-C/ngx-loading) - this is simple.. but developer must remember to turn on and off! On the other hand [angular2-busy](https://github.com/devyumao/angular2-busy) only refers to observables.. but seems little unsupported at the moment. 
-    * angular2-busy is working but puts the backdrop on the entire page.. not to the host element only.
+    * angular2-busy is working but puts the backdrop on the entire page.. not to the host element only. Also it is adding platform-browser-dynamic - which is fairly big chunk.. hence I must go for another alternative..
+* Authorization is provided via ngx-permissions. To use - we must make a call to BE to retrieve available roles and permissions. Eventually - the entire game is of permissions only using two directives.
+    * Need to add RouteGuard example as well as programmatic access to authentication data in modules.
+* Animation is implemented for route animation for now. Need more complex animation cases implemented.
+* PrimeNG menubar is implemented.
+    * Purposefully, font-awesome is not included as the moment as usually.. it is clunky download for couple of icons.
+* A catch all component call not-found is looking for any incorrect routing.
+* Header and sticky footer has been implemented.

@@ -7,7 +7,6 @@ import { NgxPermissionsModule } from 'ngx-permissions';
   imports: [
     CommonModule,
   ],
-  declarations: [],
   exports: [ BusyModule, NgxPermissionsModule ]
 })
 export class AppcommonModule { }

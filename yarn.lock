@@ -4711,6 +4711,10 @@ pretty-error@^2.0.2:
     renderkid "^2.0.1"
     utila "~0.4"
 
+primeng@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-5.0.2.tgz#05c4a4502efd4c3bc5d506aa01ae8eb30f9764db"
+
 process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "http://vossbasmgdd2oss01.ad.infosys.com:4873/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"

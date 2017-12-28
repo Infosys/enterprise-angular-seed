@@ -1,8 +1,8 @@
-<perfect-scrollbar>
   <div [ngBusy]="posts$" style="height: 100px; width:400px; border:1px solid blue;">
-    This section should be busy!
+    This section should be hidden behind busy indication!
   </div>
   <div style="height: 2000px; width:400px;">
+    Really long content.. height of 2000px in home.component.html.
     <div *ngxPermissionsOnly="['listExperts']">
       <div>Viewable List of Experts here.. accessible to permission "listExperts"</div>
   </div>
@@ -17,4 +17,3 @@
      </div>
    </div>
   </div>
-</perfect-scrollbar>
