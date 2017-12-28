@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-import { BusyModule, BUSY_CONFIG_DEFAULTS } from 'tixif-ngx-busy';
 import { NgxPermissionsModule } from 'ngx-permissions';
 import { MenubarModule, MenuItem } from 'primeng/primeng';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
@@ -34,7 +33,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES, { enableTracing: false}),
-    BusyModule.forRoot(BUSY_CONFIG_DEFAULTS),
     NgxPermissionsModule.forRoot(),
     HttpClientModule,
     MenubarModule,

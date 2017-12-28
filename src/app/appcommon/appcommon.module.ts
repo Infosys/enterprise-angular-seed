@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BusyModule } from 'tixif-ngx-busy';
 import { NgxPermissionsModule } from 'ngx-permissions';
+import { BusyDirective } from './directives/busy.directive';
 
 @NgModule({
   imports: [
     CommonModule,
   ],
-  exports: [ BusyModule, NgxPermissionsModule ]
+  exports: [ NgxPermissionsModule, BusyDirective],
+  declarations: [ BusyDirective ]
 })
 export class AppcommonModule { }

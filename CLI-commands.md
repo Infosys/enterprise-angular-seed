@@ -19,6 +19,9 @@ ng g c home/components/footer --spec false --m home
 
 ng g module --routing Demo -m App
 ng g c demo/components/DemoLanding --spec false --m demo
+
+ng g d appcommon/directives/busy --spec false -m appcommon
+
 ````
 
 ### prod build with stats.json generated.

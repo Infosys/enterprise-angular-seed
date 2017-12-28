@@ -11,9 +11,42 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@import '~tixif-ngx-busy/build/style/busy.css';
-
 // Needed to ensure smaller mennubar when I am not using font-awesome
 .ui-menu.ui-menubar .ui-menubar-root-list>li>a>.ui-submenu-icon {
   float: left;
+}
+
+.busy-indicator{
+  position: absolute;
+  z-index: 1000;
+  background-color: #ffffffdd;
+}
+.busy-indicator .spinner {
+  width: 40px;
+  height: 40px;
+  margin: 1px auto;
+  background-color: palevioletred;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
 }

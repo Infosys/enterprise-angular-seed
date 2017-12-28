@@ -5867,10 +5867,6 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tixif-ngx-busy@^0.0.8:
-  version "0.0.8"
-  resolved "http://vossbasmgdd2oss01.ad.infosys.com:4873/tixif-ngx-busy/-/tixif-ngx-busy-0.0.8.tgz#2f9462823e2ccddeba1bdccaa4aa1ae4f6627b5c"
-
 tmp@0.0.24:
   version "0.0.24"
   resolved "http://vossbasmgdd2oss01.ad.infosys.com:4873/tmp/-/tmp-0.0.24.tgz#d6a5e198d14a9835cc6f2d7c3d9e302428c8cf12"
