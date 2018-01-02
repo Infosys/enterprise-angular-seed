@@ -22,6 +22,8 @@ ng g c demo/components/DemoLanding --spec false --m demo
 
 ng g d appcommon/directives/busy --spec false -m appcommon
 
+ng g s appcommon/services/app --spec false -m appcommon
+
 ````
 
 ### prod build with stats.json generated.

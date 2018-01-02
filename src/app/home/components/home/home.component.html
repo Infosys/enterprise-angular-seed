@@ -1,6 +1,12 @@
-  <div appBusy style="height: 100px; width:400px; border:1px solid blue;">
+<div>
+
+  <h2 style="padding: 10px;">{{counterValue}}</h2>
+
+  <div [appBusy]="{color:'blue', show:showBusy, backdropColor: '#ff99ff88'}" style="height: 100px; width:400px; border:1px solid #666;">
     This section should be hidden behind busy indication!
   </div>
+  <button (click)="toggle()" >Increase Counter (global) and get notified</button>
+
   <div style="height: 2000px; width:400px;">
     Really long content.. height of 2000px in home.component.html.
     <div *ngxPermissionsOnly="['listExperts']">
@@ -17,3 +23,4 @@
      </div>
    </div>
   </div>
+</div>

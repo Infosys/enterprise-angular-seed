@@ -1,8 +1,8 @@
+import { AppcommonModule } from './appcommon/appcommon.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
 
 import { NgxPermissionsModule } from 'ngx-permissions';
 import { MenubarModule, MenuItem } from 'primeng/primeng';
@@ -34,9 +34,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES, { enableTracing: false}),
     NgxPermissionsModule.forRoot(),
-    HttpClientModule,
     MenubarModule,
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+    AppcommonModule
   ],
   providers: [
     {

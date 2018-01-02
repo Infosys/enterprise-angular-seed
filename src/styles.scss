@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~simple-css-reset/reset.css';
+// button style in above reset.css is not nice! so resetting.
+button{
+  padding: 1px 6px;
+  background-color: buttonface;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+}
 
 html, body {
   padding: 0;
@@ -20,18 +28,27 @@ body {
   position: absolute;
   z-index: 1000;
   background-color: #ffffffdd;
+  &.hide{
+    display: none;
+  }
+  &.full-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .spinner {
+    width: 40px;
+    height: 40px;
+    margin: 1px auto;
+    background-color: palevioletred;
+  
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+  }
 }
-.busy-indicator .spinner {
-  width: 40px;
-  height: 40px;
-  margin: 1px auto;
-  background-color: palevioletred;
-
-  border-radius: 100%;
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
-}
-
 @-webkit-keyframes sk-scaleout {
   0% { -webkit-transform: scale(0) }
   100% {

@@ -6,7 +6,7 @@
     "start": "concurrently \"npm run json:server\" \"ng serve --proxy-config proxy.json\" ",
     "build": "ng build",
     "lint": "ng lint",
-    "json:server": "json-server --watch db.json"
+    "json:server": "json-server --delay 3000 --watch db.json"
   },
   "private": true,
   "dependencies": {
