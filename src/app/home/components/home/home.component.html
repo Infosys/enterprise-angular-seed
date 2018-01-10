@@ -11,16 +11,16 @@
     Really long content.. height of 2000px in home.component.html.
     <div *ngxPermissionsOnly="['listExperts']">
       <div>Viewable List of Experts here.. accessible to permission "listExperts"</div>
-  </div>
-  
-  <div *ngxPermissionsOnly="['deleteExpert']">
-    <div>Delete Expert button accessible only via permission "deleteExpert"</div>
-  </div>
+    </div>
+    
+    <div *ngxPermissionsOnly="['deleteExpert']">
+      <div>Delete Expert button accessible only via permission "deleteExpert"</div>
+    </div>
    
-   <div *ngxPermissionsExcept="'editExpert'">
-     <div> Only Guest can see this!! 
-       You seem to be New here.. Please Sign up to edit the expert!!
-     </div>
-   </div>
+    <div *ngxPermissionsExcept="'editExpert'">
+      <div> Only Guest can see this!! 
+        You seem to be New here.. Please Sign up to edit the expert!!
+      </div>
+    </div>
   </div>
 </div>
