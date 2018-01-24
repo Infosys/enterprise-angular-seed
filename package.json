@@ -7,7 +7,8 @@
     "build": "ng build",
     "lint": "ng lint",
     "json:server": "json-server --delay 3000 --watch db.json",
-    "format:fix": "pretty-quick --staged"
+    "format:fix": "pretty-quick --staged",
+    "precommit": "concurrently \"npm run format:fix\" \" npm run lint\" "
   },
   "private": true,
   "dependencies": {

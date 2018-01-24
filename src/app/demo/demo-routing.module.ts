@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: DemoLandingComponent },
-  { path: 'chartist', loadChildren: './chartist-demo/chartist-demo.module#ChartistDemoModule' }
+  { path: 'chart', loadChildren: './chartist-demo/chartist-demo.module#ChartistDemoModule' }
 ];
 
 @NgModule({
