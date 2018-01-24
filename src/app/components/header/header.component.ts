@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
       {
           label: 'Demo', routerLink: ['demo'],
           items: [
-              {label: 'Undo', routerLink: ['demo']},
+              {label: 'Chartist Charts', routerLink: ['demo/chartist']},
               {label: 'Redo', routerLink: ['pagename']}
           ]
       }

@@ -19,6 +19,7 @@
       "styles": [
         "../node_modules/primeng/resources/themes/omega/theme.css",
         "../node_modules/primeng/resources/primeng.min.css",
+        "../node_modules/chartist/dist/chartist.css",
         "styles.scss"
       ],
       "scripts": [],

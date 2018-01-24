@@ -24,6 +24,8 @@ ng g d appcommon/directives/busy --spec false -m appcommon
 
 ng g s appcommon/services/app --spec false -m appcommon
 
+ng g module --routing demo/ChartistDemo -m Demo
+
 ````
 
 ### prod build with stats.json generated.
