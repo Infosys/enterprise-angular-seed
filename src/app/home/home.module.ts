@@ -8,15 +8,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    AppcommonModule,
-    HomeRoutingModule,
-    HttpClientModule
-  ],
-  providers: [
-    JsonServerService
-  ],
+  imports: [CommonModule, AppcommonModule, HomeRoutingModule, HttpClientModule],
+  providers: [JsonServerService],
   declarations: [HomeComponent]
 })
-export class HomeModule { }
+export class HomeModule {}

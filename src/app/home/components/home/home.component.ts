@@ -5,7 +5,6 @@ import * as log from 'loglevel';
 import { JsonServerService } from '../../services/json-server.service';
 import { AppState } from '../../../appcommon/services/app.service';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,11 +16,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private counterSub: Subscription;
   public counterValue: number;
 
-  constructor(private service: JsonServerService, private appState: AppState) { }
+  constructor(private service: JsonServerService, private appState: AppState) {}
 
   ngOnInit() {
     // this.showBusy = undefined;
-    this.appState.counterVal.subscribe( data => {
+    this.appState.counterVal.subscribe(data => {
       console.log('data', data);
       this.counterValue = data;
     });
@@ -31,11 +30,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
     log.debug('debug');
     log.warn('warning!');
     //setTimeout( () => {
-      this.showBusy = true;
-      this.posts$ = this.service.getBEData().subscribe( posts => {
-        log.debug(posts);
-        this.showBusy = false;
-      });
+    this.showBusy = true;
+    this.posts$ = this.service.getBEData().subscribe(posts => {
+      log.debug(posts);
+      this.showBusy = false;
+    });
     //});
   }
   public toggle(): void {

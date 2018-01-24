@@ -5,10 +5,7 @@ import { DemoRoutingModule } from './demo-routing.module';
 import { DemoLandingComponent } from './components/demo-landing/demo-landing.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    DemoRoutingModule
-  ],
+  imports: [CommonModule, DemoRoutingModule],
   declarations: [DemoLandingComponent]
 })
-export class DemoModule { }
+export class DemoModule {}

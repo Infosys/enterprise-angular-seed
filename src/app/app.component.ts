@@ -6,10 +6,9 @@ import { User } from './appcommon/models/user';
 import { routerTransition } from './components/animations/router.animations';
 import { UserInfoService } from './appcommon/services/user-info.service';
 
-
 @Component({
   selector: 'app-root',
-  animations: [ routerTransition ],
+  animations: [routerTransition],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
@@ -28,7 +27,7 @@ export class AppComponent implements OnInit {
       for (const role in user.roles) {
         if (user.roles.hasOwnProperty(role)) {
           const permissions = user.roles[role];
-          permissions.forEach( (perm) => {
+          permissions.forEach(perm => {
             this.permsService.addPermission(perm);
           });
           this.rolesService.addRole(role, permissions);

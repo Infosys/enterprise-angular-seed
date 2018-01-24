@@ -6,7 +6,8 @@
     "start": "concurrently \"npm run json:server\" \"ng serve --proxy-config proxy.json\" ",
     "build": "ng build",
     "lint": "ng lint",
-    "json:server": "json-server --delay 3000 --watch db.json"
+    "json:server": "json-server --delay 3000 --watch db.json",
+    "format:fix": "pretty-quick --staged"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +42,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
     "concurrently": "^3.5.1",
+    "husky": "^0.14.3",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "json-server": "^0.12.1",
@@ -50,6 +52,8 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "prettier": "^1.10.2",
+    "pretty-quick": "^1.2.2",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",

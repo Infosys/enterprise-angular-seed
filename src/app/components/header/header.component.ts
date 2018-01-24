@@ -8,31 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   items: MenuItem[];
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.items = [
       {
-          label: 'Home', routerLink: ['home'],
-          items: [{
-                  label: 'New',
-                  items: [
-                      {label: 'Project'},
-                      {label: 'Other'},
-                  ]
-              },
-              {label: 'Open', routerLink: ['pagename']},
-              {label: 'Quit', routerLink: ['pagename']}
-          ]
+        label: 'Home',
+        routerLink: ['home'],
+        items: [
+          {
+            label: 'New',
+            items: [{ label: 'Project' }, { label: 'Other' }]
+          },
+          { label: 'Open', routerLink: ['pagename'] },
+          { label: 'Quit', routerLink: ['pagename'] }
+        ]
       },
       {
-          label: 'Demo', routerLink: ['demo'],
-          items: [
-              {label: 'Chartist Charts', routerLink: ['demo/chartist']},
-              {label: 'Redo', routerLink: ['pagename']}
-          ]
+        label: 'Demo',
+        routerLink: ['demo'],
+        items: [
+          { label: 'Chartist Charts', routerLink: ['demo/chartist'] },
+          { label: 'Redo', routerLink: ['pagename'] }
+        ]
       }
-  ];
+    ];
   }
-
 }

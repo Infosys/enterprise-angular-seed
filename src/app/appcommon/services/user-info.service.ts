@@ -5,11 +5,9 @@ import { User } from '../models/user';
 
 @Injectable()
 export class UserInfoService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   public getUserInfo(): Observable<User> {
     return this.http.get<User>('api/userInfo');
   }
-
 }

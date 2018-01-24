@@ -12,12 +12,10 @@ export interface InternalStateType {
 
 @Injectable()
 export class AppState {
-
   // Demo to show how we can keep global state and get notified.
   private _counter = 0;
-  @Output()
-  public counterVal = new EventEmitter<number>();
-  public _state: InternalStateType = { };
+  @Output() public counterVal = new EventEmitter<number>();
+  public _state: InternalStateType = {};
   public incCounter() {
     this._counter++;
     this.counterVal.emit(this._counter);
@@ -27,13 +25,12 @@ export class AppState {
     this.counterVal.emit(this._counter);
   }
 
-
   // Simple global state mgmt system aka lite redux
   /**
    * Already return a clone of the current state.
    */
   public get state() {
-    return this._state = this._clone(this._state);
+    return (this._state = this._clone(this._state));
   }
   /**
    * Never allow mutation
@@ -54,14 +51,13 @@ export class AppState {
     /**
      * Internally mutate our state.
      */
-    return this._state[prop] = value;
+    return (this._state[prop] = value);
   }
 
   private _clone(object: InternalStateType) {
     /**
      * Simple object clone.
      */
-    return JSON.parse(JSON.stringify( object ));
+    return JSON.parse(JSON.stringify(object));
   }
-
 }

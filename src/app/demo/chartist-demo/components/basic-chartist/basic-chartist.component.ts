@@ -24,7 +24,7 @@ export class BasicChartistComponent implements OnInit, OnDestroy {
   liveData: LiveData;
   options: ChartOptions;
   interval;
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.liveData = {
@@ -47,7 +47,7 @@ export class BasicChartistComponent implements OnInit, OnDestroy {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
-  private dummyData()/* : Chartist.IChartistData */ {
+  private dummyData() /* : Chartist.IChartistData */ {
     this.interval = setInterval(() => {
       const time: Date = new Date();
       const formattedTime: string = [time.getHours(), time.getMinutes(), time.getSeconds()].join(':');
@@ -67,7 +67,6 @@ export class BasicChartistComponent implements OnInit, OnDestroy {
       console.log('labels', labels);
       this.liveData = Object.assign({}, this.liveData);
     }, 1000);
-
 
     /* return {
       'labels': [

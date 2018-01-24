@@ -5,8 +5,7 @@ import { Post } from '../models/post';
 
 @Injectable()
 export class JsonServerService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   public getBEData(): Observable<Post[]> {
     return this.http.get<Post[]>('/api/posts');

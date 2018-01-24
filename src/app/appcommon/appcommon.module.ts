@@ -9,15 +9,9 @@ import { AppState } from './services/app.service';
 import { UserInfoService } from './services/user-info.service';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    HttpClientModule
-  ],
-  exports: [ NgxPermissionsModule, BusyDirective ],
-  declarations: [ BusyDirective ],
-  providers: [
-    AppState,
-    UserInfoService
-  ]
+  imports: [CommonModule, HttpClientModule],
+  exports: [NgxPermissionsModule, BusyDirective],
+  declarations: [BusyDirective],
+  providers: [AppState, UserInfoService]
 })
-export class AppcommonModule { }
+export class AppcommonModule {}
