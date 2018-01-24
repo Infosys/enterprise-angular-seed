@@ -1,13 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~simple-css-reset/reset.css';
-// button style in above reset.css is not nice! so resetting.
-button{
-  padding: 1px 6px;
-  background-color: buttonface;
-  border-width: 2px;
-  border-style: outset;
-  border-color: buttonface;
-}
+@import '~normalize.css/normalize.css';
+@import '~sanitize.css/sanitize.css';
 
 html, body {
   padding: 0;

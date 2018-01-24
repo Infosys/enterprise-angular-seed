@@ -16,15 +16,19 @@ if you use npm to install packages - it will fail with error saying `yarn-or-die
 ## Features of this seed
 
 * [x] Uses angular-cli to scaffold the project
+* [x] Base reset CSS (via normalize.css and sanitize.css)
 * [x] Uses slim scrollbars for the content page
 * [x] Entire application is lazy loaded only - even the home page
 * [x] Uses yarn for any new package install and controls yarn-lock file..
 * [x] conditional console.log output controlled via environment.ts?
-* Adds demo pages to use salient application upgrades
+* [ ] Adds demo pages to use salient application upgrades
     * [x] Uses primeNG for some basic widgets
     * [x] Authorization directive
     * [ ] Progress / Busy Indicator Directive
     * [x] Uses Animations
+* [x] Small Chart demo using Chartist
+* [ ] Prettier to format the code automatically
+
 ## Notes
 
 * IE 11 support is disabled by default. If you need to support IE11 - please uncheck appropriate blocks in polyfills.ts. This increases size of polyfills bundle file.

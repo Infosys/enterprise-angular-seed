@@ -1,19 +1,15 @@
-$app-footer-height: 0.7rem;
-$app-footer-padding: 0.9rem;
+$app-footer-padding: 0.5rem;
 app-footer{
-  height: $app-footer-height;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0;
-  padding-top: $app-footer-padding - $app-footer-height;
-  padding-bottom: $app-footer-height+$app-footer-padding;
+  padding: $app-footer-padding 0;
   background-color: #efefef;
   text-align: center;
 }
 
 perfect-scrollbar {
-  max-height: calc(100vh - 4.4em);  // to offset header and footer
+  max-height: calc(100vh - 4.7rem);  // to offset header and footer
   min-height: 50vh;
 }

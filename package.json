@@ -25,9 +25,10 @@
     "ng-chartist": "^1.1.1",
     "ngx-perfect-scrollbar": "^5.3.1",
     "ngx-permissions": "^3.0.0",
+    "normalize.css": "^7.0.0",
     "primeng": "^5.0.2",
     "rxjs": "^5.5.2",
-    "simple-css-reset": "^2.0.6",
+    "sanitize.css": "^5.0.0",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
