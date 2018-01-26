@@ -27,6 +27,9 @@ if you use npm to install packages - it will fail with error saying `yarn-or-die
   * [x] Authorization directive
   * [ ] Progress / Busy Indicator Directive
   * [x] Uses Animations
+  * [ ] Dynamic component loader example
+  * [ ] JSON schema based dynamic forms
+  * [ ] Form validations
 * [x] Small Chart demo using Chartist
 * [x] Prettier to format the code automatically
 * [x] Automated build and deploy to gh_pages on github
