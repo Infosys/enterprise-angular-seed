@@ -10,7 +10,7 @@
     "format:fix": "pretty-quick --staged",
     "precommit": "concurrently \"npm run format:fix\" \" npm run lint\" ",
     "deploy":
-      "ng build --prod --bh /enterprise-angular-seed/ && angular-cli-ghpages --no-silent --repo=https://dharapvj:GH_TOKEN@github.com/Infosys/enterprise-angular-seed.git --name=\"Vijay Dharap\" --email=dharapvj@gmail.com"
+      "ng build --prod --bh /enterprise-angular-seed/ && angular-cli-ghpages --no-silent --repo=https://GH_TOKEN@github.com/Infosys/enterprise-angular-seed.git --name=\"Vijay Dharap\" --email=dharapvj@gmail.com"
   },
   "private": true,
   "dependencies": {
