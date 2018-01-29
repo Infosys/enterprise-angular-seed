@@ -25,6 +25,7 @@ if you use npm to install packages - it will fail with error saying `yarn-or-die
 * [ ] Adds demo pages to use salient application upgrades
   * [x] Uses primeNG for some basic widgets
   * [x] Authorization directive
+  * [ ] Authorization canLoad guards using ngx-directives
   * [ ] Progress / Busy Indicator Directive
   * [x] Uses Animations
   * [ ] Uses More better and subtle Animations

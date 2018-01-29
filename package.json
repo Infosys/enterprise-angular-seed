@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"npm run json:server\" \"ng serve --proxy-config proxy.json\" ",
+    "start": "ng serve",
     "build": "ng build",
     "lint": "ng lint",
     "json:server": "json-server --delay 3000 --watch db.json",

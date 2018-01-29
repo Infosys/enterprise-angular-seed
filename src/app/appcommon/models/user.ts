@@ -1,5 +1,5 @@
-import { Roles } from './roles';
+// import { Roles } from './roles';
 
 export interface User {
-  roles: Roles;
+  permissions: string[];
 }
