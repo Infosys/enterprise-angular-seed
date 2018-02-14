@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
         routerLink: ['demo'],
         items: [
           { label: 'Chartist Charts', routerLink: ['demo/chartist'] },
-          { label: 'Redo', routerLink: ['pagename'] }
+          { label: 'Json Form Demo', routerLink: ['demo/json-form'] }
         ]
       }
     ];

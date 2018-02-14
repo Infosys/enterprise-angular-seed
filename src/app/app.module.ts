@@ -9,6 +9,7 @@ import { MenubarModule, MenuItem } from 'primeng/primeng';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { JsonSchemaFormModule, Bootstrap4FrameworkModule } from 'angular2-json-schema-form';
 
 import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
@@ -29,6 +30,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgxPermissionsModule.forRoot(),
     MenubarModule,
     PerfectScrollbarModule,
+    Bootstrap4FrameworkModule,
+    JsonSchemaFormModule.forRoot(Bootstrap4FrameworkModule),
     AppcommonModule
   ],
   providers: [

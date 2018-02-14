@@ -2,7 +2,7 @@
 
 Here I will try to document the commands used to generate the scaffoldings.
 
-````
+```
 ng new angular-cli-seed --style scss --skip-test --skip-install --routing
 ng g module --routing Home
 ng g c home/components/Home --m home --spec false
@@ -26,9 +26,12 @@ ng g s appcommon/services/app --spec false -m appcommon
 
 ng g module --routing demo/ChartistDemo -m Demo
 
-````
+ng g module --routing demo/JsonFormDemo -m Demo
+ng g c home/components/header --spec false --m home
+```
 
 ### prod build with stats.json generated.
-````
+
+```
 ng build --prod --stats-json
-````
+```
