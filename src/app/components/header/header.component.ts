@@ -28,8 +28,11 @@ export class HeaderComponent implements OnInit {
         label: 'Demo',
         routerLink: ['demo'],
         items: [
-          { label: 'Chartist Charts', routerLink: ['demo/chartist'] },
-          { label: 'Json Form Demo', routerLink: ['demo/json-form'] }
+          {
+            label: 'Chartist Charts',
+            routerLink: ['demo/chartist']
+          } /* ,
+          { label: 'Json Form Demo', routerLink: ['demo/json-form'] } */
         ]
       }
     ];
