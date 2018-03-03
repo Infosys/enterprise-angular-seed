@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ng serve",
+    "start:https": "ng serve --ssl true --host 0.0.0.0 --port 8443",
     "build": "ng build",
     "lint": "ng lint",
     "json:server": "json-server --delay 3000 --watch db.json",
