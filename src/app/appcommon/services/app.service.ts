@@ -44,7 +44,7 @@ export class AppState {
      * Use our state getter for the clone.
      */
     const state = this.state;
-    return state.hasOwnProperty(prop) ? state[prop] : state;
+    return state.hasOwnProperty(prop) ? state[prop] : null;
   }
 
   public set(prop: string, value: any) {
