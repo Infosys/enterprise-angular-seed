@@ -1,18 +1,17 @@
-apiVersion: backstage.io/v1alpha1 
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: enterprise-angular-seed
-  title: Enterprise Angular Seed
-  description: >
-    Angular CLI–based seed application maintained by Infosys, incorporating enterprise-ready best practices.
-  tags:
-    - angular
-    - enterprise
-    - seed
-    - template
+  description: Angular CLI–based seed application maintained by Infosys, incorporating enterprise-ready best practices.
+  annotations:
+    github.com/project-slug: Infosys/enterprise-angular-seed
+    backstage.io/techdocs-ref: dir:.
+  tags: [angular, enterprise, seed, template]
 spec:
   type: website
   lifecycle: production
-  owner: frontend-team
-  system: enterprise-seed-platform
- 
+  owner: group:admin-group 
+  ownedBy: [group:ADMCOE-Team, group:admin-group, group:dev-group]
+  dependsOn: []
+  system: "frontend-team"
+
